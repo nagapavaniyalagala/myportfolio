@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Portfolio 🎨</title>
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(to right, #ffecd2, #fcb69f);
+                text-align: center;
+                color: #333;
+            }
+            .navbar {
+                display: flex;
+                justify-content: center;
+                background-color: #2c3e50;
+                padding: 12px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            }
+            .navbar button {
+                background: #e74c3c;
+                color: white;
+                border: none;
+                padding: 12px 20px;
+                margin: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 10px;
+                transition: all 0.3s ease-in-out;
+            }
+            .navbar button:hover {
+                background: #c0392b;
+                transform: scale(1.1);
+            }
+            .content {
+                display: none;
+                padding: 20px;
+                background-color: white;
+                margin: 20px auto;
+                width: 60%;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                animation: fadeIn 0.5s ease-in-out;
+            }
+            h1 {
+                color: #2c3e50;
+                font-size: 28px;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        </style>
+        <script>
+            function showSection(sectionId) {
+                var sections = document.getElementsByClassName("content");
+                for (var i = 0; i < sections.length; i++) {
+                    sections[i].style.display = "none";
+                }
+                document.getElementById(sectionId).style.display = "block";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>🚀 PAVANI PORTFOLIO</h1>
+        <div class="navbar">
+            <button onclick="showSection('Home')">🏠 Home</button>
+            <button onclick="showSection('Personal_Details')">👩‍🎓 Personal Details</button>
+            <button onclick="showSection('Education')">📚 Education</button>
+            <button onclick="showSection('Certificates')">🏆 Certificates</button>
+            <button onclick="showSection('Native')">🌍 Contact</button>
+        </div>
+        
+        <div id="Home" class="content" style="display: block;">
+            <img src="porfoliohomeimage.jpeg" alt="Home" style="max-width: 200%; border-radius: 10px;">
+            <h1> <img src="aboutme.png" alt="aboutme" height=25px width=25px>About Me:</h1>
+            <p> <img src="name.png" alt="name" height=35px width=35px>Yalagala Naga Pavani</p>
+        </div>
+        
+        <div id="Personal_Details" class="content">
+            <h1>👩‍💻 Personal Details</h1>
+            <p><strong>Name:</strong> Yalagala Naga Pavani</p>
+            <p><strong>Register Number:</strong> Y23CS194</p>
+            <p><strong>College:</strong> R.V.R & J.C College of Engineering</p>
+            <p><strong>Siblings:</strong> 1 (Younger Brother 👦)</p>
+            <p><strong>Father:</strong> Yalagala Srihari (👨‍🌾 Farmer)</p>
+            <p><strong>Mother:</strong> Yalagala Subhashini (🏡 Housewife)</p>
+            <p><strong>Location:</strong> 📍 Ravinuthala, Bapatla District</p>
+        </div>
+        
+        <div id="Education" class="content">
+            <h1>📚 Education</h1>
+            <p>🏫 VI Class: Kingston High School</p>
+            <p>🏫 VII to X Class: ZP High School, Ravinuthala</p>
+            <p>🎓 Intermediate: Sri Chaitanya Junior College (Guntur)</p>
+            <p>💻 B.Tech: RVR & JC College of Engineering</p>
+        </div>
+        
+        <div id="Certificates" class="content">
+            <h1>🏆 Certifications</h1>
+            <p>✅ Certified Web Developer</p>
+            <p>✅ React Specialist</p>
+            <p>✅ UI/UX Design Certification</p>
+        </div>
+        
+        <div id="Native" class="content">
+            <h1>🌍 Contact Me</h1>
+            <p>🗣️ Native Language: Telugu</p>
+            <p>🏡 Hometown: Ravinuthala, Bapatla District</p>
+            <p><img src="instagram.jfif" alt="instagram" height=15px width=15px>pavani_081104</p>
+            <p><img src="facebook.png" alt="facebook" height=15px width=15px>NagaPavaniYalagala</p>
+            <p><img src="watsapp.png" alt="watsapp" height=15px width=15px>+91 9963495618</p>
+            <p><img src="snapchat.png" alt="snapchat" height=15px width=15px>pavani_yalagala</p>
+        </div>
+    </body>
+</html>
